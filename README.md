@@ -12,10 +12,10 @@ docker build -t globus-connect-personal .
 
 Configure:
 ```bash
-docker run -v some_volume:~/globusconnect -setup
+docker run -v some_volume:/home/globus/.globusconnect -setup ...
 ```
 
 Run:
 ```bash
-docker run -v some_volume:~/globusconnect -start
+docker run -v some_volume:/home/globus/.globusconnect -start
 ```

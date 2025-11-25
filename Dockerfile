@@ -11,7 +11,9 @@ RUN curl https://downloads.globus.org/globus-connect-personal/linux/stable/globu
 
 RUN mv /opt/globusconnectpersonal-* /opt/globusconnectpersonal
 
-USER guest
+RUN adduser -D globus
+
+USER globus
 
 ENTRYPOINT ["globusconnect"]
 
