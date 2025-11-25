@@ -15,7 +15,7 @@ RUN adduser -D globus
 
 USER globus
 
-RUN mkdir /home/globus/.globusconnect
+RUN mkdir /home/globus/.globusonline
 
 ENTRYPOINT ["globusconnect"]
 
