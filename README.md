@@ -1,0 +1,21 @@
+# Globus Connect Personal Docker
+
+Docker container for running Globus Connect Personal on Alpine Linux.
+
+## Build
+
+```bash
+docker build -t globus-connect-personal .
+```
+
+## Usage
+
+Configure:
+```bash
+docker run -v some_volume:~/globusconnect -setup
+```
+
+Run:
+```bash
+docker run -v some_volume:~/globusconnect -start
+```
