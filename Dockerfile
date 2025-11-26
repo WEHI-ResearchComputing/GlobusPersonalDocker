@@ -5,7 +5,8 @@ ENV PATH="/opt/globusconnectpersonal:${PATH}"
 RUN apk add --no-cache \
     curl \
     bash \
-    coreutils
+    coreutils \
+    libstdc++
 
 RUN curl https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz | tar -C /opt -xzf - 
 
