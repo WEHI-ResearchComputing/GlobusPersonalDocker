@@ -10,7 +10,7 @@ RUN curl https://downloads.globus.org/globus-connect-personal/linux/stable/globu
 
 RUN mv /opt/globusconnectpersonal-* /opt/globusconnectpersonal
 
-RUN useradd globus
+RUN adduser --disabled-password globus
 
 USER globus
 
